@@ -1,31 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="utf-8" />
-
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-		<title>index</title>
-		<meta name="description" content="" />
-		<meta name="author" content="monster" />
-
-		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
-
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<meta charset="utf-8"/>
+		<style type="text/css">
+			body {
+				font-size : 0.8em;
+				font-family : dotum;
+				line-height : 1.6em;
+			}
+			body.black {
+				background-color : black;
+				color : white;
+			}
+			body.black a {
+				color : white;
+			}
+			header{
+				border-bottom : 2px solid #CCC;
+				padding : 20px 10px;
+			}
+			#toolbar {
+				float : right;
+				padding : 10px 10px;
+			}
+			nav {
+				float : left;
+				margin-right : 20px;
+				min-height : 500px;
+				border-right : 2px solid #ccc;
+			}
+			nav li {
+				list-style : none;
+				padding-left : 5px;
+				padding-right : 25px;
+				
+			}
+			article {
+				float : left
+			}
+		</style>
 	</head>
-
-	<body>
-<<<<<<< HEAD
-		<h1>Hello world</h1>
-		<h2>Hello world</h2>
-		<h3>Hello world</h3>
-		<a href="http://localhost/opentutorials/index.html">Hello word</a>
-=======
-		Hello world
->>>>>>> f221080d94f1c9440d70e934f82443df7ef35905
+	<body id="body">
+		<div>
+			<header>
+				<h1>JavaScript</h1>
+			</header>
+			<div id="toolbar">
+				<input type="button" value="black" onclick="document.getElementById('body').className='black'"/>
+				<input type="button" value="white" onclick="document.getElementById('body').className='white'"/>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="http://opentutorials.org/course/49/16">JavaScript</a>
+					</li>
+					<li>
+						<a href="http://opentutorials.org/course/49/17">변수와 상수</a>
+					</li>
+					<li>
+						<a href="http://opentutorials.org/course/49/18">연산자</a>
+					</li>
+					<li>
+						<a href="http://opentutorials.org/course/49/19">함수</a>
+					</li>
+					<li>
+						<a href="http://opentutorials.org/course/49/20">이벤트</a>
+					</li>
+					<li>
+						<a href="http://opentutorials.org/course/49/21">객체</a>
+					</li>
+				</ul>
+			</nav>
+			<article>
+				<h2>변수와 상수</h2>
+				<div>
+					<p>
+						변수란
+					</p>
+					<ul>
+						<li>
+							변하는 값
+						</li>
+						<li>
+							x = 10 일 때 왼쪽 항인 x는 오른쪽 10에 따라 다른 값이 지정된다.
+						</li>
+					</ul>
+				</div>
+			</article>
+		</div>
 	</body>
 </html>
